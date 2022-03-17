@@ -1,0 +1,34 @@
+{
+  "name": "react-native-elements-template",
+  "version": "4.0.0-rc.0.bleeding-edge",
+  "main": "node_modules/expo/AppEntry.js",
+  "author": {
+    "name": "RNE"
+  },
+  "keywords": [
+    "react-native",
+    "react-native-elements",
+    "react-native-template",
+    "expo"
+  ],
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "@react-native-elements/base": "github:react-native-elements/react-native-elements#base",
+    "@react-native-elements/themed": "github:react-native-elements/react-native-elements#themed",
+    "expo": "~44.0.0",
+    "expo-status-bar": "~1.2.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-native": "0.64.3",
+    "react-native-web": "0.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9"
+  }
+}
