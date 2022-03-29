@@ -4,16 +4,16 @@ React Native Elements Template
 
 #### Stable
 
-        expo init app --template react-native-elements-template
+        expo init app --template @rneui/template
 
 #### Stable Typescript
 
-        expo init app --template react-native-elements-template@typescript
+        expo init app --template @rneui/template@typescript
 
 #### Bleeding Edge
 
-        expo init app --template react-native-elements-template@bleeding-edge
+        expo init app --template @rneui/template@bleeding-edge
 
 #### Bleeding Edge Typescript
 
-        expo init app --template react-native-elements-template@bleeding-edge-typescript
+        expo init app --template @rneui/template@bleeding-edge-typescript

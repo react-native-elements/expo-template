@@ -12,12 +12,13 @@ fs.readdirSync(root).forEach((template) => {
   const manifestJson = JSON.parse(manifest);
   manifestJson.version = version + "." + template;
   if (stable) {
-    manifestJson.dependencies["@react-native-elements/base"] = version;
-    manifestJson.dependencies["@react-native-elements/themed"] = version;
+    manifestJson.dependencies["@rneui/base"] = version;
+    manifestJson.dependencies["@rneui/themed"] = version;
   }
   fs.writeFileSync(manifestPath, JSON.stringify(manifestJson, null, 2));
 
   const distTag = template.replace(/stable-?/, "");
   const tag = distTag ? `--tag ${distTag}` : "";
-  execSync(`cd templates/${template} && npm publish ${tag}`);
+  console.log({ template, distTag });
+  execSync(`cd templates/${template} && npm publish ${tag} --access=public `);
 });
