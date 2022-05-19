@@ -1,0 +1,20 @@
+{
+  "name": "expo-template",
+  "version": "1.0.0",
+  "description": "React Native Elements Expo Templates",
+  "main": "none",
+  "scripts": {
+    "publish": "node scripts/publish.js",
+    "version": "node scripts/version.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-native-elements/expo-template.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/react-native-elements/expo-template/issues"
+  },
+  "homepage": "https://github.com/react-native-elements/expo-template#readme"
+}
