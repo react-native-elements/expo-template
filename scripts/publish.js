@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const { execSync } = require("child_process");
 
-const root = path.resolve(__dirname, "templates");
+const root = path.resolve(__dirname, "..", "templates");
 
 fs.readdirSync(root).forEach((template) => {
   const distTag = template.replace(/stable-?/, "");

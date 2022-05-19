@@ -1,6 +1,6 @@
 {
   "name": "@rneui/template",
-  "version": "4.0.0-rc.1.bleeding-edge",
+  "version": "4.0.0-rc.3.edge",
   "main": "node_modules/expo/AppEntry.js",
   "author": {
     "name": "RNE"

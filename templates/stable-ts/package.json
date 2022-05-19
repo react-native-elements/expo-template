@@ -1,6 +1,6 @@
 {
   "name": "@rneui/template",
-  "version": "4.0.0-rc.1.stable-typescript",
+  "version": "4.0.0-rc.3.stable-ts",
   "main": "node_modules/expo/AppEntry.js",
   "author": {
     "name": "RNE"
@@ -25,8 +25,8 @@
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
     "react-native-web": "0.17.1",
-    "@rneui/base": "4.0.0-rc.1",
-    "@rneui/themed": "4.0.0-rc.1"
+    "@rneui/base": "4.0.0-rc.3",
+    "@rneui/themed": "4.0.0-rc.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

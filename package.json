@@ -1,5 +1,6 @@
 {
   "name": "expo-template",
+  "private": true,
   "version": "1.0.0",
   "description": "React Native Elements Expo Templates",
   "main": "none",
