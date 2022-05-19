@@ -1,4 +1,6 @@
-React Native Elements Template
+# @rneui/template
+
+## React Native Elements Expo Template
 
 ### Usage
 

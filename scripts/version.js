@@ -4,10 +4,12 @@ const path = require("path");
 const version = process.argv[2];
 const root = path.resolve(__dirname, "..", "templates");
 
+const templates = fs.readdirSync(root);
+
 (function () {
   if (!version) return console.log("Version is required");
 
-  fs.readdirSync(root).forEach((template) => {
+  templates.forEach((template) => {
     const stable = template.includes("stable");
     const manifestPath = path.resolve(root, template, "package.json");
     const manifest = fs.readFileSync(manifestPath, "utf8");
@@ -18,5 +20,9 @@ const root = path.resolve(__dirname, "..", "templates");
       manifestJson.dependencies["@rneui/themed"] = version;
     }
     fs.writeFileSync(manifestPath, JSON.stringify(manifestJson, null, 2));
+    fs.copyFileSync(
+      path.join(root, "..", "README.md"),
+      path.join(root, template, "README.md")
+    );
   });
 })();
